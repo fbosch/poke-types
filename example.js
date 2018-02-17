@@ -6,6 +6,7 @@ const abilityEffectiveness = (abilityType, targetType) => {
     case noEffect: return 'It has no effect...'
     case notVeryEffective: return 'It\'s not very effective...'
     case superEffective: case ultra: return 'It\'s super effective!'
+    default: return ''
   }
 }
 

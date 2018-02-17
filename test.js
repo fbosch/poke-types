@@ -25,12 +25,12 @@ test('passing wrong data type to getTypeWeaknesses and getTypeStrengths returns 
   assert.throws(() => getTypeWeaknesses(42), TypeError)
   assert.throws(() => getTypeWeaknesses(null), TypeError)
   assert.throws(() => getTypeWeaknesses(undefined), TypeError)
-  assert.throws(() => getTypeWeaknesses('lizard'), Error)
+  assert.throws(() => getTypeWeaknesses('soda'), Error)
   assert.throws(() => getTypeStrengths(), TypeError)
   assert.throws(() => getTypeStrengths(42), TypeError)
   assert.throws(() => getTypeStrengths(undefined), TypeError)
   assert.throws(() => getTypeStrengths(null), TypeError)
-  assert.throws(() => getTypeStrengths('firea'), Error)
+  assert.throws(() => getTypeStrengths('meme'), Error)
 })
 
 test('dual type with one sub-type having a 1x weakness modifier and the other having a 2x modifier results in a 2x modifier', assert => {

@@ -11,9 +11,9 @@
   <img width="64" height="64" src="https://github.com/fbosch/pokemon-types/raw/master/assets/icon-grass.png" >
 </p>
 <p align="center">
-A module that exposes all Pokémon types —
+A module that exposes all Pokémon types and
 <br/>
- their weaknesses, strengths and immunities.
+— their weaknesses, strengths and immunities.
 </p>
 
 ## Install
@@ -36,6 +36,7 @@ const abilityEffectiveness = (targetType, abilityType) => {
     case noEffect: return 'It has no effect...'
     case notVeryEffective: return 'It\'s not very effective...'
     case superEffective: case ultraEffective: return 'It\'s super effective!'
+    default: return ''
   }
 }
 
@@ -73,12 +74,12 @@ console.log(pikachu.attack(gyarados)('thunderbolt'))
 
 ## API
 
-### effectiveness: _Object_
+### .effectiveness: _Object_
 | noEffect 	| weak 	| notVeryEffective 	| normal 	| superEffective 	| ultra 	|
 |----------	|------	|------------------	|--------	|----------------	|-------	|
 | 0 	| 0.25 	| 0.5 	| 1 	| 2 	| 4 	|
 
-### types: _string[]_
+### .types: _string[]_
 
 | normal | fire | water | electric | grass | ice | fighting | poison | ground |
 |--------|----------|-------|----------|-------|--------|----------|--------|--------|
