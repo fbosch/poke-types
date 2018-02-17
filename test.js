@@ -12,10 +12,10 @@ test('passing multiplie types in any order to getTypeWeaknesses should result in
 })
 
 test('types can be passsed to getTypeWeaknesses and getTypeStrengths in any casing', assert => {
-  assert.truthy(getTypeWeaknesses('fIrE'), 'weaknsseses: argument mixed casing')
+  assert.truthy(getTypeWeaknesses('fIrE'), 'weaknesses: argument mixed casing')
   assert.truthy(getTypeWeaknesses('GRASS'), 'weaknesses: argument uppercasing')
   assert.truthy(getTypeWeaknesses('ICE', 'fire'), 'weaknesses: multiple arguments in different casing')
-  assert.truthy(getTypeWeaknesses('ghost', 'DARK'), 'weaknsesses: multiple arguments in different casing')
+  assert.truthy(getTypeWeaknesses('ghost', 'DARK'), 'weaknesses: multiple arguments in different casing')
   assert.truthy(getTypeStrengths('DRAGON'), 'strengths: argument uppercasing')
   assert.truthy(getTypeStrengths('stEEl'), 'strengths: argument mixed casing')
 })
