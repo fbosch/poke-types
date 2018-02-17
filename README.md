@@ -2,7 +2,6 @@
 [![Build Status](https://travis-ci.org/fbosch/poke-types.svg?branch=master)](https://travis-ci.org/fbosch/poke-types)
 [![Coverage Status](https://coveralls.io/repos/github/fbosch/poke-types/badge.svg)](https://coveralls.io/github/fbosch/poke-types)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
-[![Dependency Status](https://www.versioneye.com/user/projects/5a88463c0fb24f3ee283becc/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/5a88463c0fb24f3ee283becc)
 [![Known Vulnerabilities](https://snyk.io/test/github/fbosch/poke-types/badge.svg?targetFile=package.json)](https://snyk.io/test/github/fbosch/poke-types?targetFile=package.json)
 ---
 <p align="center">
