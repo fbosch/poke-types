@@ -76,6 +76,7 @@ module.exports = {
     [ground]: notVeryEffective,
     [rock]: notVeryEffective,
     [ghost]: notVeryEffective,
+    [steel]: noEffect,
     [fairy]: superEffective
   },
   [ground]: {
@@ -94,7 +95,6 @@ module.exports = {
     [fighting]: superEffective,
     [bug]: superEffective,
     [rock]: notVeryEffective,
-    [flying]: notVeryEffective,
     [steel]: notVeryEffective
   },
   [psychic]: {
@@ -139,7 +139,9 @@ module.exports = {
   [dark]: {
     [fighting]: notVeryEffective,
     [psychic]: superEffective,
-    [ghost]: superEffective
+    [ghost]: superEffective,
+    [dark]: notVeryEffective,
+    [fairy]: notVeryEffective
   },
   [steel]: {
     [fire]: notVeryEffective,
