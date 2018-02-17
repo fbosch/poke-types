@@ -78,7 +78,7 @@ console.log(pikachu.attack(gyarados)('thunderbolt'))
 |----------	|------	|------------------	|--------	|----------------	|-------	|
 | 0 	| 0.25 	| 0.5 	| 1 	| 2 	| 4 	|
 
-### [types: _string[]_](#types)
+### <a name="types">types: _string[]_</a>
 
 | normal | fire | water | electric | grass | ice | fighting | poison | ground |
 |--------|----------|-------|----------|-------|--------|----------|--------|--------|
