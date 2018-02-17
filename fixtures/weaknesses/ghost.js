@@ -1,0 +1,1 @@
+module.exports = {'normal': 0, 'fire': 1, 'water': 1, 'electric': 1, 'grass': 1, 'ice': 1, 'fighting': 0, 'poison': 0.5, 'ground': 1, 'flying': 1, 'psychic': 1, 'bug': 0.5, 'rock': 1, 'ghost': 2, 'dragon': 1, 'dark': 2, 'steel': 1, 'fairy': 1}
