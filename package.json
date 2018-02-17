@@ -1,6 +1,6 @@
 {
   "name": "poke-types",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Pokémon types, weaknesses and strengths",
   "main": "index.js",
   "scripts": {
