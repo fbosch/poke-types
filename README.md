@@ -1,4 +1,5 @@
 # PokéTypes
+[![GitHub package version](https://img.shields.io/github/package-json/v/badges/shields.svg?style=flat)]()
 [![Build Status](https://travis-ci.org/fbosch/poke-types.svg?branch=master)](https://travis-ci.org/fbosch/poke-types)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 ![File Size](http://img.badgesize.io/fbosch/poke-types/master/index.js.svg)

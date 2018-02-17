@@ -16,5 +16,14 @@
     "ava": "^0.25.0",
     "nyc": "^11.4.1",
     "standard": "^10.0.3"
-  }
+  },
+  "keywords": [
+    "pokemon",
+    "pokemon types",
+    "nintendo",
+    "weaknesses",
+    "strengths",
+    "types",
+    "effectiveness"
+  ]
 }
