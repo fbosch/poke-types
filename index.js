@@ -4,6 +4,7 @@ const typesObject = types.reduce((accum, type) => Object.assign({}, accum, { [ty
 const { normal, fire, water, electric, grass, ice, fighting, poison, ground, flying, psychic, bug, rock, ghost, dragon, dark, steel, fairy } = typesObject
 
 const noEffect = 0 // It has no effect...
+const weakEffectiveness = 0.25 // It's not very effective
 const notVeryEffective = 0.5 // It's not very effective
 const normalEffectiveness = 1
 const superEffective = 2 // It's super effective!
@@ -68,6 +69,7 @@ const typeStrengths = {
     [normal]: superEffective,
     [ice]: superEffective,
     [poison]: notVeryEffective,
+    [flying]: notVeryEffective,
     [psychic]: notVeryEffective,
     [bug]: notVeryEffective,
     [rock]: superEffective,
@@ -82,7 +84,6 @@ const typeStrengths = {
     [ground]: notVeryEffective,
     [rock]: notVeryEffective,
     [ghost]: notVeryEffective,
-    [dark]: noEffect,
     [fairy]: superEffective
   },
   [ground]: {
@@ -100,7 +101,7 @@ const typeStrengths = {
     [grass]: superEffective,
     [fighting]: superEffective,
     [bug]: superEffective,
-    [rock]: superEffective,
+    [rock]: notVeryEffective,
     [flying]: notVeryEffective,
     [steel]: notVeryEffective
   },
@@ -188,9 +189,13 @@ const getDualTypeWeakness = (firstWeakness, secondWeakness) => {
   const smallestValue = firstWeakness < secondWeakness ? firstWeakness : secondWeakness
   const largestValue = firstWeakness > secondWeakness ? firstWeakness : secondWeakness
 
-  if (difference === 0 && smallestValue === superEffective) return ultraEffective
-  if (difference === 0) return smallestValue
-
+  if (difference === 0) {
+    switch (smallestValue) {
+      case superEffective: return ultraEffective
+      case notVeryEffective: return weakEffectiveness
+      default: return smallestValue
+    }
+  }
   if (largestValue === superEffective) {
     switch (smallestValue) {
       case notVeryEffective: return normalEffectiveness
@@ -218,27 +223,30 @@ const getTypeWeaknesses = (firstType, secondType) => {
 /** returns the strengths a given type has agains */
 const getTypeStrengths = type => typeChart[type]
 
-const typeValidation = value => func => {
+const validateType = value => func => {
+  if (!value) throw new TypeError('Pokémon Types: missing argument')
   const checkType = type => {
-    if (typeof type !== 'string') throw new TypeError('Invalid Pokémon Type: The given type "' + type + '" is not a string')
+    if (typeof type !== 'string') throw new TypeError('Pokémon Types: The given type "' + type + '" is not a string')
     const lowerCaseType = type.toLowerCase()
-    if (types.indexOf(lowerCaseType) === -1) throw new Error('Invalid Pokémon Type: "' + type + '" does not exist!')
+    if (types.indexOf(lowerCaseType) === -1) throw new Error('Pokémon Types: the given type "' + type + '" does not exist!')
     return lowerCaseType
   }
   if (Array.isArray(value)) {
     const formattedTypes = value.filter(type => type).map(checkType)
+    if (!formattedTypes.length) throw new TypeError('Pokémon Types: invalid arguments')
     return func(...formattedTypes)
   }
   return func(checkType(value))
 }
 
-module.exports.getTypeWeaknesses = (firstType, secondType) => typeValidation([firstType, secondType])(getTypeWeaknesses)
-module.exports.getTypeStrengths = type => typeValidation(type)(getTypeStrengths)
+module.exports.getTypeWeaknesses = (firstType, secondType) => validateType([firstType, secondType])(getTypeWeaknesses)
+module.exports.getTypeStrengths = type => validateType(type)(getTypeStrengths)
 module.exports.typeChart = typeChart
 module.exports.types = types
 module.exports.typesObject = typesObject
 module.exports.effectiveness = {
   noEffect,
+  weakEffectiveness,
   notVeryEffective,
   normalEffectiveness,
   superEffective,
