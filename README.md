@@ -1,4 +1,4 @@
-# Pokémon Types
+# PokéTypes
 
 <p align="center">
   <img width="64" height="64" src="https://github.com/fbosch/pokemon-types/raw/master/assets/icon-fire.png">

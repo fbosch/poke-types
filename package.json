@@ -1,5 +1,5 @@
 {
-  "name": "pokemon-types",
+  "name": "poke-types",
   "version": "1.0.0",
   "description": "Pokémon types, weaknesses and strengths",
   "main": "index.js",
