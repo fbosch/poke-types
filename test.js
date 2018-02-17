@@ -1,7 +1,7 @@
 import test from 'ava'
 import weaknesses from './fixtures/weaknesses'
 import effectiveness from './effectiveness'
-import types from './types'
+import { types } from './types'
 import { getTypeWeaknesses, getTypeStrengths } from './'
 
 test('type weaknesses are generated correctly', assert => types.forEach(type => assert.deepEqual(weaknesses[type], getTypeWeaknesses(type), type)))
