@@ -1,10 +1,10 @@
 
 const { types } = require('./types')
 const typeStrengths = require('./strengths')
-const { noEffect, weakEffectiveness, notVeryEffective, normalEffectiveness, superEffective, ultraEffective } = require('./effectiveness')
+const { noEffect, weak, notVeryEffective, normal, superEffective, ultra } = require('./effectiveness')
 
 // creates an object with all types with normal type effectivness
-const normalizedTypeEffectiveness = types.reduce((values, type) => Object.assign({}, values, { [type]: normalEffectiveness }), {})
+const normalizedTypeEffectiveness = types.reduce((values, type) => Object.assign({}, values, { [type]: normal }), {})
 
 // a chart object with empty values
 const emptyTypeChart = types.reduce((chart, type) => Object.assign({}, chart, { [type]: normalizedTypeEffectiveness }), {})
@@ -26,15 +26,15 @@ const getDualTypeWeakness = (firstWeakness, secondWeakness) => {
 
   if (difference === 0) {
     switch (smallestValue) {
-      case superEffective: return ultraEffective
-      case notVeryEffective: return weakEffectiveness
+      case superEffective: return ultra
+      case notVeryEffective: return weak
       default: return smallestValue
     }
   }
   if (largestValue === superEffective) {
     switch (smallestValue) {
-      case notVeryEffective: return normalEffectiveness
-      case normalEffectiveness: return superEffective
+      case notVeryEffective: return normal
+      case normal: return superEffective
     }
   }
   switch (smallestValue) {
@@ -76,6 +76,5 @@ const validateType = value => func => {
 
 module.exports.getTypeWeaknesses = (firstType, secondType) => validateType([firstType, secondType])(getTypeWeaknesses)
 module.exports.getTypeStrengths = type => validateType(type)(getTypeStrengths)
-module.exports.typeChart = typeChart
 module.exports.types = types
-module.exports.typesObj = types.typesObj
+module.exports.effectiveness = require('./effectiveness')

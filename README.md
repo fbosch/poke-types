@@ -70,3 +70,49 @@ console.log(pikachu.attack(gyarados)('thunderbolt'))
 // ​​​​​ It's super effective!
 
 ```
+
+## API
+
+### effectiveness: _Object_
+| noEffect 	| weak 	| notVeryEffective 	| normal 	| superEffective 	| ultra 	|
+|----------	|------	|------------------	|--------	|----------------	|-------	|
+| 0 	| 0.25 	| 0.5 	| 1 	| 2 	| 4 	|
+
+### [types: _string[]_](#types)
+
+| normal | fire | water | electric | grass | ice | fighting | poison | ground |
+|--------|----------|-------|----------|-------|--------|----------|--------|--------|
+| **flying** | **psychich** | **bug** | **rock** | **ghost** | **dragon** | **dark** | **steel** | **fairy** |
+
+### .getTypeWeaknesses(type: _string_, ?secondType: _string_): Object
+
+
+#### type
+[type](#types) name to get weaknesses for
+
+
+#### secondType
+the second [type](#types) to get dual [type](#types) weaknesses for
+
+```js
+pokeTypes.getTypeWeaknesses('grass')
+// { normal: 1, fire: 2, water: 0.5, ... }
+pokeTypes.getTypeWeaknesses('fire', 'bug')
+// { normal: 1, fire: 1, water: 2, ... }
+```
+
+### .getTypeStrengths(type: _string_): Object
+
+#### type:
+[type](#types) name to get type strengths for.
+
+```js
+pokeTypes.getTypeStrengths('electric')
+// { normal: 1, fire: 1, water: 2, ... }
+pokeType.getTypeStrengths('fighting')
+// { normal: 2, fire: 1, water: 1, ... }
+```
+
+
+## License
+MIT @ [Frederik Bosch](https://github.com/fbosch)

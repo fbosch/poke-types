@@ -43,27 +43,27 @@ test('dual type with one sub-type having a 1x weakness modifier and the other ha
 })
 
 test('dual type with both sub-types having a 2x weakness modifier results in a 4x modifier', assert => {
-  const { ultraEffective } = effectiveness
-  assert.true(getTypeWeaknesses('flying', 'dragon').ice === ultraEffective)
-  assert.true(getTypeWeaknesses('rock', 'dark').fighting === ultraEffective)
-  assert.true(getTypeWeaknesses('ghost', 'psychic').dark === ultraEffective)
-  assert.true(getTypeWeaknesses('ground', 'fire').water === ultraEffective)
-  assert.true(getTypeWeaknesses('poison', 'fire').ground === ultraEffective)
-  assert.true(getTypeWeaknesses('fighting', 'bug').flying === ultraEffective)
+  const { ultra } = effectiveness
+  assert.true(getTypeWeaknesses('flying', 'dragon').ice === ultra)
+  assert.true(getTypeWeaknesses('rock', 'dark').fighting === ultra)
+  assert.true(getTypeWeaknesses('ghost', 'psychic').dark === ultra)
+  assert.true(getTypeWeaknesses('ground', 'fire').water === ultra)
+  assert.true(getTypeWeaknesses('poison', 'fire').ground === ultra)
+  assert.true(getTypeWeaknesses('fighting', 'bug').flying === ultra)
 })
 
 test('dual type with both sub-types having a 1x weakness modifier results in a 1x modifier', assert => {
-  const { normalEffectiveness } = effectiveness
-  assert.true(getTypeWeaknesses('normal', 'fire').electric === normalEffectiveness)
-  assert.true(getTypeWeaknesses('water', 'grass').fighting === normalEffectiveness)
-  assert.true(getTypeWeaknesses('dragon', 'dark').poison === normalEffectiveness)
-  assert.true(getTypeWeaknesses('fighting', 'rock').flying === normalEffectiveness)
-  assert.true(getTypeWeaknesses('electric', 'bug').water === normalEffectiveness)
+  const { normal } = effectiveness
+  assert.true(getTypeWeaknesses('normal', 'fire').electric === normal)
+  assert.true(getTypeWeaknesses('water', 'grass').fighting === normal)
+  assert.true(getTypeWeaknesses('dragon', 'dark').poison === normal)
+  assert.true(getTypeWeaknesses('fighting', 'rock').flying === normal)
+  assert.true(getTypeWeaknesses('electric', 'bug').water === normal)
 })
 
 test('dual type with both sub-types having a 0.5x weakness modifier results in a 0.25x modifier', assert => {
-  const { weakEffectiveness } = effectiveness
-  assert.true(getTypeWeaknesses('rock', 'steel').normal === weakEffectiveness)
-  assert.true(getTypeWeaknesses('psychic', 'flying').fighting === weakEffectiveness)
-  assert.true(getTypeWeaknesses('bug', 'poison').grass === weakEffectiveness)
+  const { weak } = effectiveness
+  assert.true(getTypeWeaknesses('rock', 'steel').normal === weak)
+  assert.true(getTypeWeaknesses('psychic', 'flying').fighting === weak)
+  assert.true(getTypeWeaknesses('bug', 'poison').grass === weak)
 })

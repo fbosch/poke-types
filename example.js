@@ -1,11 +1,11 @@
 import { getTypeWeaknesses } from './index'
-import { noEffect, notVeryEffective, superEffective, ultraEffective } from './effectiveness'
+import { noEffect, notVeryEffective, superEffective, ultra } from './effectiveness'
 
 const abilityEffectiveness = (abilityType, targetType) => {
   switch (getTypeWeaknesses(...targetType)[abilityType]) {
     case noEffect: return 'It has no effect...'
     case notVeryEffective: return 'It\'s not very effective...'
-    case superEffective: case ultraEffective: return 'It\'s super effective!'
+    case superEffective: case ultra: return 'It\'s super effective!'
   }
 }
 
