@@ -1,4 +1,4 @@
-module.exports = [
+const types = [
   'normal',
   'fire',
   'water',
@@ -18,3 +18,8 @@ module.exports = [
   'steel',
   'fairy'
 ]
+
+const typesObject = types.reduce((accum, type) => Object.assign({}, accum, { [type]: type }), {})
+
+module.exports.types = types
+module.exports.typesObject = typesObject

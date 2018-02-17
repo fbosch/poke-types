@@ -1,5 +1,4 @@
-const types = require('./types')
-const typesObject = types.reduce((accum, type) => Object.assign({}, accum, { [type]: type }), {})
+const { typesObject } = require('./types')
 const { normal, fire, water, electric, grass, ice, fighting, poison, ground, flying, psychic, bug, rock, ghost, dragon, dark, steel, fairy } = typesObject
 const { noEffect, notVeryEffective, superEffective } = require('./effectiveness')
 

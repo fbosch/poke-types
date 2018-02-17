@@ -1,5 +1,5 @@
 
-const types = require('./types')
+const { types } = require('./types')
 const typeStrengths = require('./strengths')
 const { noEffect, weakEffectiveness, notVeryEffective, normalEffectiveness, superEffective, ultraEffective } = require('./effectiveness')
 
@@ -78,3 +78,4 @@ module.exports.getTypeWeaknesses = (firstType, secondType) => validateType([firs
 module.exports.getTypeStrengths = type => validateType(type)(getTypeStrengths)
 module.exports.typeChart = typeChart
 module.exports.types = types
+module.exports.typesObj = types.typesObj
