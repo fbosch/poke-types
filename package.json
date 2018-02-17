@@ -4,7 +4,8 @@
   "description": "Pokémon types, weaknesses and strengths",
   "main": "index.js",
   "scripts": {
-    "test": "standard && ava --verbose"
+    "test": "standard && nyc ava --verbose",
+    "coverage": "nyc report --reporter=text-lcov > coverage.lcov | coveralls"
   },
   "engines": {
     "node": ">=6"
@@ -14,6 +15,8 @@
   "license": "MIT",
   "devDependencies": {
     "ava": "^0.25.0",
+    "coveralls": "^3.0.0",
+    "nyc": "^11.4.1",
     "standard": "^10.0.3"
   }
 }
