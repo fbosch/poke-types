@@ -1,11 +1,10 @@
 {
   "name": "poke-types",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Pokémon types, weaknesses and strengths",
   "main": "index.js",
   "scripts": {
-    "test": "standard && nyc ava --verbose",
-    "coverage": "nyc report --reporter=text-lcov | coveralls"
+    "test": "standard && nyc ava --verbose"
   },
   "engines": {
     "node": ">=6"
@@ -15,7 +14,6 @@
   "license": "MIT",
   "devDependencies": {
     "ava": "^0.25.0",
-    "coveralls": "^3.0.0",
     "nyc": "^11.4.1",
     "standard": "^10.0.3"
   }
