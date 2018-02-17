@@ -10,7 +10,7 @@
   "engines": {
     "node": ">=6"
   },
-  "repository": "https://github.com/fbosch/pokemon-types.git",
+  "repository": "https://github.com/fbosch/poke-types.git",
   "author": "fbosch <frede.bosch@gmail.com>",
   "license": "MIT",
   "devDependencies": {
