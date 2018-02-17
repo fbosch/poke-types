@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "standard && nyc ava --verbose",
-    "coverage": "nyc report --reporter=text-lcov > coverage.lcov | coveralls"
+    "coverage": "nyc report --reporter=text-lcov | coveralls"
   },
   "engines": {
     "node": ">=6"
