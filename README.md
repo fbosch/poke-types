@@ -87,11 +87,11 @@ console.log(pikachu.attack(gyarados)('thunderbolt'))
 
 
 #### type
-[type](#types) name to get weaknesses for
+[type](#types-string) name to get weaknesses for
 
 
 #### secondType
-the second [type](#types) to get dual [type](#types) weaknesses for
+the second [type](#types-string) to get dual [type](#types-string) weaknesses for
 
 ```js
 pokeTypes.getTypeWeaknesses('grass')
@@ -103,7 +103,7 @@ pokeTypes.getTypeWeaknesses('fire', 'bug')
 ### .getTypeStrengths(type: _string_): Object
 
 #### type:
-[type](#types) name to get type strengths for.
+[type](#types-string) name to get type strengths for.
 
 ```js
 pokeTypes.getTypeStrengths('electric')
