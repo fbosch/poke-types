@@ -17,13 +17,13 @@ A module that exposes all Pokémon types and
 </p>
 
 ## Install
-Yarn:
+### `yarn`
 ```sh
 $ yarn add poke-types
 ```
-NPM:
+### `npm`
 ```sh
-npm install --save poke-types
+$ npm install --save poke-types
 ```
 
 ## Usage
