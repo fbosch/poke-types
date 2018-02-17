@@ -7,7 +7,7 @@
     "test": "standard && ava --verbose"
   },
   "engines": {
-    "node": ">=4"
+    "node": ">=6"
   },
   "repository": "https://github.com/fbosch/pokemon-types.git",
   "author": "fbosch <frede.bosch@gmail.com>",
