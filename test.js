@@ -1,5 +1,5 @@
 import test from 'ava'
-import weaknesses from './fixtures/weaknesses'
+import weaknesses from './weaknesses'
 import effectiveness from './effectiveness'
 import { types } from './types'
 import { getTypeWeaknesses, getTypeStrengths } from './'
