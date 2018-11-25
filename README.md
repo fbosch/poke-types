@@ -83,7 +83,7 @@ console.log(pikachu.attack(gyarados)('thunderbolt'))
 
 | normal | fire | water | electric | grass | ice | fighting | poison | ground |
 |--------|----------|-------|----------|-------|--------|----------|--------|--------|
-| **flying** | **psychich** | **bug** | **rock** | **ghost** | **dragon** | **dark** | **steel** | **fairy** |
+| **flying** | **psychic** | **bug** | **rock** | **ghost** | **dragon** | **dark** | **steel** | **fairy** |
 
 ### .getTypeWeaknesses(type: _string_, ?secondType: _string_): Object
 
