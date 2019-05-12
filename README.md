@@ -62,7 +62,7 @@ const pikachu = {
 }
 
 const gyarados = {
-  name: 'Gyrados',
+  name: 'Gyarados',
   type: ['water', 'flying']
 }
 
