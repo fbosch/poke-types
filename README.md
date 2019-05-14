@@ -5,11 +5,8 @@
 ![File Size](http://img.badgesize.io/fbosch/poke-types/master/index.js.svg)
 [![Known Vulnerabilities](https://snyk.io/test/github/fbosch/poke-types/badge.svg?targetFile=package.json)](https://snyk.io/test/github/fbosch/poke-types?targetFile=package.json)
 ---
-<p align="center">
-  <br/>
-  <img width="64" height="64" src="https://github.com/fbosch/pokemon-types/raw/master/assets/icon-fire.png">
-  <img width="64" height="64" src="https://github.com/fbosch/pokemon-types/raw/master/assets/icon-water.png">
-  <img width="64" height="64" src="https://github.com/fbosch/pokemon-types/raw/master/assets/icon-grass.png" >
+<p align="center" style="font-size: 3rem; margin-top: 2rem;">
+  🔥 💧 🍃
 </p>
 <p align="center">
 A module that exposes all Pokémon types and
