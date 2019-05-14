@@ -7,7 +7,7 @@
     "test": "standard && nyc ava --verbose"
   },
   "engines": {
-    "node": ">=6"
+    "node": ">=10"
   },
   "repository": "https://github.com/fbosch/poke-types.git",
   "author": "fbosch <frede.bosch@gmail.com>",
