@@ -5,7 +5,7 @@
 ![File Size](http://img.badgesize.io/fbosch/poke-types/master/index.js.svg)
 [![Known Vulnerabilities](https://snyk.io/test/github/fbosch/poke-types/badge.svg?targetFile=package.json)](https://snyk.io/test/github/fbosch/poke-types?targetFile=package.json)
 ---
-<p align="center" style="font-size: 3rem; margin-top: 2rem;">
+<p align="center" style="font-size: 50px; margin-top: 40px">
   🔥 💧 🍃
 </p>
 <p align="center">
