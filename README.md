@@ -1,4 +1,5 @@
 # PokéTypes
+[![Awesome Pokemon](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/tobiasbueschel/awesome-pokemon)
 [![Build Status](https://travis-ci.org/fbosch/poke-types.svg?branch=master)](https://travis-ci.org/fbosch/poke-types)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 ![File Size](http://img.badgesize.io/fbosch/poke-types/master/index.js.svg)
@@ -61,7 +62,7 @@ const pikachu = {
 }
 
 const gyarados = {
-  name: 'Gyrados',
+  name: 'Gyarados',
   type: ['water', 'flying']
 }
 
@@ -83,7 +84,7 @@ console.log(pikachu.attack(gyarados)('thunderbolt'))
 
 | normal | fire | water | electric | grass | ice | fighting | poison | ground |
 |--------|----------|-------|----------|-------|--------|----------|--------|--------|
-| **flying** | **psychich** | **bug** | **rock** | **ghost** | **dragon** | **dark** | **steel** | **fairy** |
+| **flying** | **psychic** | **bug** | **rock** | **ghost** | **dragon** | **dark** | **steel** | **fairy** |
 
 ### .getTypeWeaknesses(type: _string_, ?secondType: _string_): Object
 
