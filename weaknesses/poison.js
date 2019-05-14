@@ -1,1 +1,1 @@
-module.exports = {'normal': 1, 'fire': 1, 'water': 1, 'electric': 1, 'grass': 0.5, 'ice': 1, 'fighting': 0.5, 'poison': 0.5, 'ground': 2, 'flying': 1, 'psychic': 2, 'bug': 0.5, 'rock': 1, 'ghost': 1, 'dragon': 1, 'dark': 1, 'steel': 1, 'fairy': 0.5}
+module.exports = { 'normal': 1, 'fire': 1, 'water': 1, 'electric': 1, 'grass': 0.5, 'ice': 1, 'fighting': 0.5, 'poison': 0.5, 'ground': 2, 'flying': 1, 'psychic': 2, 'bug': 0.5, 'rock': 1, 'ghost': 1, 'dragon': 1, 'dark': 1, 'steel': 1, 'fairy': 0.5 }
