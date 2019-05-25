@@ -1,8 +1,10 @@
 # PokéTypes
 [![Awesome Pokemon](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/tobiasbueschel/awesome-pokemon)
+![Downloads](https://img.shields.io/npm/dt/poke-types.svg)
+![Downloads](https://img.shields.io/npm/dm/poke-types.svg)
+![File Size](http://img.badgesize.io/fbosch/poke-types/master/index.js.svg)
 [![Build Status](https://travis-ci.org/fbosch/poke-types.svg?branch=master)](https://travis-ci.org/fbosch/poke-types)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
-![File Size](http://img.badgesize.io/fbosch/poke-types/master/index.js.svg)
 [![Known Vulnerabilities](https://snyk.io/test/github/fbosch/poke-types/badge.svg?targetFile=package.json)](https://snyk.io/test/github/fbosch/poke-types?targetFile=package.json)
 ---
 
