@@ -13,7 +13,7 @@
   🔥 💧 🍃
 </p>
 <p align="center">
-A module that exposes all Pokémon types and
+A module that exposes all Pokémon types, including
 <br/>
 — their weaknesses, strengths and immunities.
 </p>
